@@ -1,0 +1,61 @@
+/* customStyles.css */
+
+/* Add hover effect for clickable elements */
+.clickable:hover {
+  @apply text-gray-600;
+}
+
+/* Add a subtle gradient to the body background */
+body {
+  @apply bg-gradient-to-br from-gray-100 to-gray-300;
+}
+
+/* ------- Award-winning design section ------- */
+
+/* Define prompt details overlay styles */
+.prompt-details-overlay {
+  @apply fixed inset-0 w-screen h-screen bg-gradient-to-br from-blue-600 to-indigo-900 flex justify-center items-center z-10;
+}
+
+/* Define prompt details styling */
+.prompt-details {
+  @apply bg-gradient-to-br from-indigo-900 to-indigo-700 w-full sm:max-w-4xl sm:max-h-96 p-8 box-border shadow-2xl overflow-y-auto flex flex-col relative rounded-lg m-auto;
+  @apply transform transition-all duration-500 ease-in-out;
+}
+
+/* Define styling for prompt details title */
+.prompt-details-title {
+  @apply text-4xl text-white font-semibold mb-6;
+}
+
+/* Define close button styles */
+.close-button {
+  @apply sm:absolute sm:top-4 sm:right-4 p-2 bg-indigo-700 text-white rounded-full;
+  @apply hover:bg-indigo-600 transition-colors duration-300; /* Add hover effect */
+}
+
+/* Define prompt details content styling */
+.prompt-details-content {
+  @apply bg-gradient-to-br from-gray-100 to-gray-300 p-8;
+  @apply rounded-lg;
+}
+
+/* Define prompt image styling */
+.prompt-image {
+  @apply w-full max-h-60 object-contain my-4 shadow-lg;
+}
+
+/* Define custom class for maximum image height on medium screens and larger */
+@media (min-width: 768px) {
+  .prompt-image {
+    max-height: 200px;
+  }
+}
+
+/* Provide fallback support using max-width with a named breakpoint */
+@media (max-width: 767px) {
+  .close-button {
+    @apply absolute top-4 right-4 p-2 bg-indigo-700 text-white rounded-full;
+  }
+}
+/* ------- End of award-winning design section ------- */

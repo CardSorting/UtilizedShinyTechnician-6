@@ -1,0 +1,48 @@
+/* General styles */
+.list-no-bullets {
+  @apply list-none p-0 m-0;
+}
+/* Placeholder styles */
+.placeholder-text {
+  @apply text-xl font-medium text-gray-600;
+}
+/* Prompt card styles */
+.prompt-card {
+  @apply bg-white p-4 m-4 rounded-lg shadow-md;
+}
+
+.prompt-card-header {
+  @apply flex justify-between items-center;
+}
+
+/* Thumbnail styles */
+.thumbnail-container {
+  @apply relative;
+}
+
+.thumbnail-image {
+  @apply w-32 h-32 object-cover rounded;
+}
+
+/* Delete button styles */
+.delete-button {
+  @apply absolute top-0 right-0 mt-2 mr-2 p-1 bg-red-500 text-white rounded-full cursor-pointer;
+}
+
+/* Title styles */
+.prompt-card-title {
+  @apply ml-4 text-lg font-semibold;
+}
+
+/* Action buttons styles */
+.action-buttons {
+  @apply mt-4;
+}
+
+.action-button-container {
+  @apply flex justify-end;
+}
+
+.action-button {
+  @apply px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded;
+}

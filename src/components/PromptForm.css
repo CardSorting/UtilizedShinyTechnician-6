@@ -1,0 +1,76 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1976d2;
+  --primary-color-hover: #1565c0;
+}
+
+/* App.css */
+.custom-form-text {
+  margin-top: -20px;
+  color: #808080;
+}
+
+.form {
+  @apply w-full mx-auto;
+  max-width: 600px;
+}
+
+.form-group {
+  @apply flex flex-col mb-4;
+}
+
+label {
+  @apply mb-2;
+}
+
+input[type='text'],
+input[type='file'] {
+  @apply w-full outline-none;
+}
+
+img {
+  @apply mb-2;
+}
+
+h3 {
+  @apply mb-2;
+}
+
+.form-submit-btn {
+  background-color: var(--primary-color);
+  @apply border-none text-white px-4 py-2 cursor-pointer outline-none;
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  background-color: var(--primary-color-hover);
+}
+
+.collapsible-btn {
+  @apply block w-full bg-gray-300 text-gray-900 text-left px-4 py-2 my-2 border-none cursor-pointer outline-none;
+}
+
+.collapsible-panel {
+  @apply hidden overflow-hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapsible-panel.visible {
+  @apply block;
+}
+
+.prompt-form-thumbnail {
+  @apply w-24 h-24 object-cover object-center;
+}
+
+input[type='text']:focus,
+input[type='file']:focus,
+.form-submit-btn:focus,
+.collapsible-btn:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.3);
+}
