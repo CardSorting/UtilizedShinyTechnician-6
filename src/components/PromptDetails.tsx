@@ -64,7 +64,7 @@ export const PromptDetail: React.FC<Props> = ({ visible, prompt, onClose }) => {
               <Typography gutterBottom>Positive Prompt: {prompt.positive}</Typography>
               <Typography gutterBottom>Negative Prompt: {prompt.negative}</Typography>
               <Typography gutterBottom>Model: {prompt.model}</Typography>
-              <Typography gutterBottom>Seed: {prompt.seed}</Typography>
+              <Typography gutterBottom>Seeds: {prompt.seed}</Typography>
               <Typography gutterBottom>Steps: {prompt.samplingStep}</Typography>
               <Typography gutterBottom>CFG Scale: {prompt.cfgScale}</Typography>
               <Typography gutterBottom>Image Size: {prompt.imageSize}</Typography>
